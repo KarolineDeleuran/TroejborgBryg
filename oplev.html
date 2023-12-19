@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <!--meta-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Alkoholfri, øl, sundhed, mikrobryggeri, Aarhus">
+  <meta name="description" content="Alkoholfri øl varianter">
+  <meta name="author" content="Karoline Deleuran">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--stylesheet-->
+  <link rel="stylesheet" href="css/style.css">
+  <title>TrøjborgBryg</title>
+
+  <!--google font-->
+  <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Kumbh Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Baskervville' rel='stylesheet'>
+
+  <!--favicon-->
+  <link rel="icon" href="/img/maskot.png">
+</head>
+
+<body>
+  <header>
+    <!--H E A D E R-->
+    <div id="mySidebar" class="sidebar">
+      <h1 class="logo"><a href="forside.html">TrøjborgBryg</a></h1>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/burgermenuaeben.png"
+          alt="aebenburgermenu"></a>
+      <button class="dropdown-btn">FRI
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="fri.html">FRI varianter</a>
+        <a href="fisk.html">Bryggeprocessen</a>
+        <a href="shop.html">Shop</a>
+      </div>
+      <a href="oplev.html">Oplev</a>
+      <button class="dropdown-btn">Om os
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="voreshistorie.html">Vores historie</a>
+        <a href="voresvision.html">Vores vision</a>
+      </div>
+      <a href="nydlivetfrit.html">Nyd livet frit</a>
+    </div>
+
+    <!--JAVA TIL HEADER-->
+    <div id="main">
+      <button class="openbtn" onclick="openNav()"><img src="img/burgermenulukket.png" alt="lukket oeldaese"></button>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+    <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+    </script>
+
+  </header>
+
+  <!-- M A I N  S T A R T E R   H E R-->
+  <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_full_page_tabs BRUGE DEN HER TIL DESKTOP-->
+  <main>
+
+    <!--menu til mobilen-->
+    <div class="oplevmenu1">
+      <div class="flexover1">
+        <h2 class="overskriftoplev">OPLEV</h2>
+        <img class="imgarm" src="img/arm.png" alt="arm med oel">
+      </div>
+
+
+      <button class="accordion" id="blind1">blindsmagning</button>
+      <div class="panel" id="blind">
+        <h3 class="blindsmagoverskrift">BLINDSMAGNING</h3>
+        <p class="paneltext">Er du en tvivler? Tror du det er for meget af det gode? Eller vil du bare gerne have en
+          hyggelig aften. <br>
+          Så er vores blindsmagning noget for dig! Få bind for øjnene og smag på alkohol-fyldte og alkohol-fri øl og se
+          om du kan smage forskel. Vi er ret sikre i vores sag, så derfor er der også en lille præmie på højkant, til
+          dem der mener de kan smage forskel ;).
+        </p>
+        <div class="oplevflexpanel">
+          <img class="panelimg1" src="img/sleepingmask.png" alt="bind for oejnene">
+          <a href="fisk.html"> BOOK HER</a>
+        </div>
+      </div>
+
+      <button class="accordion" id="foredrag1">foredrag i huset</button>
+      <div class="panel" id="foredrag">
+        <h3 class="foredragoverskrift">FOREDRAG I HUSET</h3>
+        <p class="paneltext">FKalder alle øl-elskere, interesserede og nysgerrige! Hvis du ligesom os bare elsker øl -
+          (helst alkoholfri selvfølgelig) og måske er lidt en nørd omkring det. Så tilbyder vi et fælles arangement for
+          nørder eller bare forbigående, når vi holder foredrag i huset. .</p>
+        <p class="paneltext">Vi inviterer både gæsteforedragsholdere, men for det ikke skal være løgn, så kan vi også
+          godt lide selv at snakke om øl. </p>
+        <div class="oplevflexpanel">
+          <img class="panelimg1" src="img/blahblahblah.png" alt="blah foredrag">
+          <a href="fisk.html">SE FOREDRAG</a>
+        </div>
+      </div>
+
+      <button class="accordion" id="arrangement1">FRI arrangementer</button>
+      <div class="panel" id="arrangement">
+        <h3 class="arrangementeroverskrift">FRI ARRANGEMENTER</h3>
+        <p class="paneltext">Tag en ven eller dig selv under armen og kom til en af vores FRI arrangementer. </p>
+        <h2 class="friover">FRI yoga</h2>
+        <p class="fritext">Om du er øvet eller ej, så er der plads til dig. Der vil være en valgfri alkoholfri FRI til
+          deltagere.</p>
+        <h2 class="friover">FRI løb</h2>
+        <p class="fritext">For os er det vigtigst at alle kan være med. Hver torsdag efter arbejde kl. 17:00 mødes vi
+          til et 5 kilometers løb rundt på Trøjborg, hvor vi selvfølgelig afslutter i bryggeriet med en valgfri øl.</p>
+        <h2 class="friover">FRI natur</h2>
+        <p class="fritext">Er du naturfreak eller elsker du bare at gå en god tur uanset vind og vejr? Så passer du
+          perfekt ind i vores gå-hold. Vi mødes hver tirsdag kl. 19:30 og går en tur med en alkoholfri øl i hånden. </p>
+        <div class="oplevflexpanel">
+          <img class="panelimg1" src="img/tegnetøldåse.png" alt="fridaese">
+          <a href="fisk.html">SE FACEBOOK</a>
+        </div>
+      </div>
+
+      <!--Javescript til at åbne-->
+
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+      </script>
+    </div>
+
+    <!--menu til desktop-->
+
+    <div class="oplevmenu2">
+
+      <div class="flexover1">
+        <h2 class="overskriftoplev">OPLEV</h2>
+        <img class="imgarm" src="img/arm.png" alt="arm med oel">
+      </div>
+
+      <div class="rektangeloplevflex">
+        <p class="rektangelblind">blindsmagning</p>
+        <p class="rektangelforedrag"> foredrag i huset</p>
+        <p class="rektangelarrangement">FRI arrangementer</p>
+      </div>
+
+
+      <div>
+        <div class="flexforside2">
+          <div class="flexforside2text2">
+            <h2> Blindsmagning</h2>
+            <p>Er du en tvivler? Tror du det er for meget af det gode? Eller vil du bare gerne have en
+              hyggelig aften. <br>
+              Så er vores blindsmagning noget for dig! Få bind for øjnene og smag på alkohol-fyldte og alkohol-fri øl og
+              se om
+              du kan smage forskel. Vi er ret sikre i vores sag, så derfor er der også en lille præmie på højkant, til
+              dem der
+              mener de kan smage forskel ;).</p>
+            <div class="flexforside2buttflex">
+              <a class="flexforside2butt" href="oplev.html">BOOK HER</a>
+            </div>
+          </div>
+          <div class="flexforside2img2">
+            <img src="img/forside/natur.png" alt="natur gaetur med glade fridrikkere">
+            <img class="billede2" src="img/forside/blindsmag.png" alt="blindsamgning i sommervejr">
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="flexforside2">
+          <div class="blahimg">
+            <img src="img/blahdesktop.png" alt="blahblahblah">
+          </div>
+          <div class="oplevtext2">
+            <h2> Foredrag i huset</h2>
+            <p>Kalder alle øl-elskere, interesserede og nysgerrige! Hvis du ligesom os bare elsker øl -
+              (helst alkoholfri selvfølgelig) og måske er lidt en nørd omkring det. Så tilbyder vi et fælles arangement
+              for
+              nørder eller bare forbigående, når vi holder foredrag i huset. .</p>
+            <p>Vi inviterer både gæsteforedragsholdere, men for det ikke skal være løgn, så kan vi også godt
+              lide selv at snakke om øl.</p>
+            <div class="flexforside2buttflex">
+              <a class="flexforside2butt" href="oplev.html">SE KALENDER</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flexforside2">
+        <div class="flexforside2text2">
+          <h2> FRI arrangementer</h2>
+          <h3>FRI yoga</h3>
+          <p>Om du er øvet eller ej, så er der plads til dig. Der vil være en valgfri alkoholfri FRI til deltagere.</p>
+          <h3>FRI løb</h3>
+          <p>For os er det vigtigst at alle kan være med. Hver torsdag efter arbejde kl. 17:00 mødes vi til et 5
+            kilometers løb rundt på Trøjborg, hvor vi selvfølgelig afslutter i bryggeriet med en valgfri øl.</p>
+          <h3>FRI natur</h3>
+          <p>Er du naturfreak eller elsker du bare at gå en god tur uanset vind og vejr? Så passer du perfekt ind i
+            vores gå-hold. Vi mødes hver tirsdag kl. 19:30 og går en tur med en alkoholfri øl i hånden. </p>
+          <div class="flexforside2buttflex">
+            <a class="flexforside2butt" href="oplev.html">SE FACEBOOK</a>
+          </div>
+        </div>
+        <div class="oplevoel">
+          <img src="img/tegnetøldåse.png" alt="natur gaetur med glade fridrikkere">
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- G A L L E R I-->
+    <div>
+      <h2 class="galleriover">Hvordan er det så?</h2>
+      <p class="galleritext">Der er altid god stemning til vores arrangementer. Tag et kig forbi :) <br>
+        De foregår på Tordenskjoldsgade 40, 8200 Aarhus N</p>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img src="img/galleri/galleri1.png" style="width:100%" onclick="openModal();currentSlide(1)"
+          class="hover-shadow cursor" alt="sjov med fri">
+      </div>
+      <div class="column">
+        <img src="img/galleri/galleri5.png" style="width:100%" onclick="openModal();currentSlide(2)"
+          class="hover-shadow cursor" alt="sjov med fri">
+      </div>
+      <div class="column">
+        <img src="img/galleri/galleri3.png" style="width:100%" onclick="openModal();currentSlide(3)"
+          class="hover-shadow cursor" alt="sjov med fri">
+      </div>
+      <div class="column">
+        <img src="img/galleri/galleri6.png" style="width:100%" onclick="openModal();currentSlide(3)"
+          class="hover-shadow cursor" alt="sjov med fri">
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="img/galleri/galleri1.png" style="width:100%" alt="venner med fri i farmen">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="img/galleri/galleri5.png" style="width:100%" alt="venner med fri i farmen">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="img/galleri/galleri3.png" style="width:100%" alt="venner med fri i farmen">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="img/galleri/galleri6.png" style="width:100%" alt="venner med fri i farmen">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+
+        <div class="column">
+          <img class="demo cursor" src="img/galleri/galleri1.png" style="width:100%" onclick="currentSlide(1)"
+            alt="til et fri arrangement om sommere">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/galleri/galleri5.png" style="width:100%" onclick="currentSlide(2)"
+            alt="venner med fri i farmen">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/galleri/galleri3.png" style="width:100%" onclick="currentSlide(3)"
+            alt="foredrag på troejborg">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/galleri/galleri6.png" style="width:100%" onclick="currentSlide(3)"
+            alt="foredrag på troejborg">
+        </div>
+      </div>
+
+      <script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) { slideIndex = 1 }
+          if (n < 1) { slideIndex = slides.length }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+      </script>
+    </div>
+  </main>
+
+
+  <!-- F O O T E R  S T A R T E R   H E R-->
+  <footer>
+    <div class="footer_flex">
+      <!--Sociale medier-->
+      <section>
+        <h2>FØLG MED</h2>
+        <a target="_blank" href="https://www.instagram.com/k.ruseduller/?hl=da">
+          <img src="img/instagram.png" alt="Instagram icon" class="insta_icon">
+        </a>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100001959425376">
+          <img src="img/facebook.png" alt="Instagram icon" class="fb_icon">
+        </a>
+      </section>
+      <!--Lokation-->
+      <section>
+        <h2>LOKATION</h2>
+        <p>Graven 26, 8000 Aarhus C</p>
+        <iframe class="kort_footer"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=tordenskjoldsgade%2040,%208200%20Aarhus+(Tr%C3%B8jborgBryg)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="google map af Tankens lokation"></iframe>
+      </section>
+      <!--Kontakt-->
+      <section>
+        <h2>KONTAKT</h2>
+        <p>trøjborgbryg@gmail.com</p>
+        <p>Tlf: 30 48 97 70</p>
+      </section>
+    </div>
+    <p class="allrightstext">Copyright © 2023 Karoline Deleuran. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

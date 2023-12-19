@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <!--meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Alkoholfri, øl, sundhed, mikrobryggeri, Aarhus">
+    <meta name="description" content="Alkoholfri øl varianter">
+    <meta name="author" content="Karoline Deleuran">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>TrøjborgBryg</title>
+
+    <!--google font-->
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Kumbh Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Baskervville' rel='stylesheet'>
+
+    <!--favicon-->
+    <link rel="icon" href="img/maskot.png">
+</head>
+
+<body>
+
+    <header>
+        <!--H E A D E R-->
+        <div id="mySidebar" class="sidebar">
+            <h1 class="logo"><a href="forside.html">TrøjborgBryg</a></h1>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/burgermenuaeben.png"
+                    alt="aebenburgermenu"></a>
+            <button class="dropdown-btn">FRI
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="fri.html">FRI varianter</a>
+                <a href="fisk.html">Bryggeprocessen</a>
+                <a href="shop.html">Shop</a>
+            </div>
+            <a href="oplev.html">Oplev</a>
+            <button class="dropdown-btn">Om os
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="voreshistorie.html">Vores historie</a>
+                <a href="voresvision.html">Vores vision</a>
+            </div>
+            <a href="nydlivetfrit.html">Nyd livet frit</a>
+        </div>
+
+        <!--JAVA TIL HEADER-->
+        <div id="main">
+            <button class="openbtn" onclick="openNav()"><img src="img/burgermenulukket.png"
+                    alt="lukket oeldaese"></button>
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+        <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+
+            for (i = 0; i < dropdown.length; i++) {
+                dropdown[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") {
+                        dropdownContent.style.display = "none";
+                    } else {
+                        dropdownContent.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
+    </header>
+    <!-- M A I N S T A R T E R   H E R-->
+    <main>
+
+        <!--forside billede-->
+        <div class="maskottenforside">
+            <img src="img/forside/group13.png" alt=" maskotten firtz">
+        </div>
+
+        <div class="wrapper">
+            <div class="side left">
+                <img src="img/forside/forside.png" alt="">
+            </div>
+        </div>
+
+        <!--scroll text-->
+        <marquee class="scrolltext" behavior="scroll" scrollamount="15" direction="left">ALKOHOLFRI ALKOHOLFRI
+            ALKOHOLFRI ALKOHOLFRI
+            ALKOHOLFRI ALKOHOLFRI ALKOHOLFRI ALKOHOLFRI ALKOHOLFRI ALKOHOLFRI ALKOHOLFRI ALKOHOLFRI</marquee>
+
+
+        <div class="flexforside1">
+            <div class="flexforside1text1">
+                <p>Se bold med dine venner og vær kampklar dagen efter med vores nye AGF alkoholfri øl. </p>
+                <br>
+                <p>AGF X FRI</p>
+                <br>
+                <p>Den smager af en mere. </p>
+            </div>
+            <img src="img/forside/3agf.png" alt="3 agf fri oel på banner">
+            <h2>AGF X FRI</h2>
+        </div>
+
+
+        <div class="flexforside2">
+            <div class="flexforside2text2">
+                <h2> Events</h2>
+                <p>Igennem vores events vil vi oplyse om vores øl, hvorfor vi laver hvad vi laver og hvordan vi brygger.
+                    Det plejer at være hyggeligt. </p>
+                <p>Se vores næste arrangement herunder.</p>
+                <div class="flexforside2buttflex">
+                    <a class="flexforside2butt" href="oplev.html">OPLEV OS</a>
+                </div>
+            </div>
+            <div class="flexforside2img2">
+                <img src="img/forside/natur.png" alt="natur gaetur med glade fridrikkere">
+                <img class="billede2" src="img/forside/blindsmag.png" alt="blindsamgning i sommervejr">
+            </div>
+        </div>
+
+        <div class="flexforside3">
+            <img src="img/recycleicon.webp" alt="recycle icon">
+            <div class="flexforside3text3">
+                <h2>Giv dine gamle øldåser nyt liv</h2>
+                <p>Vi tror på, at bæredygtighed starter med handling. Derfor lancerer vi vores initiativ til at genanvende dine gamle øldåser og give dem nyt liv som en del af vores bæredygtige tilgang til brygning.</p>
+                <a href="fisk.html">LÆR MERE</a>
+            </div>
+        </div>
+
+    </main>
+    <!-- F O O T E R  S T A R T E R   H E R-->
+    <footer>
+        <div class="footer_flex">
+            <!--Sociale medier-->
+            <section>
+                <h2>FØLG MED</h2>
+                <a target="_blank" href="https://www.instagram.com/k.ruseduller/?hl=da">
+                    <img src="img/instagram.png" alt="Instagram icon" class="insta_icon">
+                </a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100001959425376">
+                    <img src="img/facebook.png" alt="Instagram icon" class="fb_icon">
+                </a>
+            </section>
+            <!--Lokation-->
+            <section>
+                <h2>LOKATION</h2>
+                <p>Graven 26, 8000 Aarhus C</p>
+                <iframe class="kort_footer"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=tordenskjoldsgade%2040,%208200%20Aarhus+(Tr%C3%B8jborgBryg)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    title="google map af Tankens lokation"></iframe>
+            </section>
+            <!--Kontakt-->
+            <section>
+                <h2>KONTAKT</h2>
+                <p>trøjborgbryg@gmail.com</p>
+                <p>Tlf: 30 48 97 70</p>
+            </section>
+        </div>
+        <p class="allrightstext">Copyright © 2023 Karoline Deleuran. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

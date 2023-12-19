@@ -1,0 +1,1502 @@
+/* -----------------------------------------------
+                  varibles
+----------------------------------------------- */
+:root {
+  --orange: #F2B56E;
+  --white: #ffffff;
+
+
+}
+
+/* -----------------------------------------------
+                      Reset
+----------------------------------------------- */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+/* -----------------------------------------------
+                     header
+----------------------------------------------- */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px;
+  font-family: 'Anton';
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.dropdown-btn {
+  padding: 8px 8px 8px 32px;
+  font-family: 'Anton';
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  display: block;
+  border: none;
+  background: none;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 10px 15px;
+  border: none;
+  position: fixed;
+  top: 0;
+  right: 25px;
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.logo a {
+  font-family: 'Baskerville';
+  font-size: 2.5rem;
+  border-bottom: none;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: white;
+  padding-left: 8px;
+}
+
+
+/* -----------------------------------------------
+                   Footer
+----------------------------------------------- */
+footer {
+  background: var(--orange);
+  color: var(--white);
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.footer_flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_flex h2 {
+  font-family: 'Anton';
+  font-size: 3rem;
+  margin: 1em;
+}
+
+.footer_flex p {
+  font-family: 'Kumbh Sans';
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+
+.insta_icon {
+  padding-right: 10px;
+}
+
+.fb_icon {
+  padding-left: 10px;
+}
+
+.kort_footer {
+  padding-top: 1em;
+}
+
+.allrightstext {
+  text-align: center;
+  font-size: 0.8rem;
+  padding-top: 2%;
+}
+
+/* -----------------------------------------------
+                   FISKE ERROR
+----------------------------------------------- */
+.bg {
+  /* The image used */
+  background-image: url('/img/fiskebaggrund.jpeg');
+  width: 100%;
+}
+
+.centered {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Anton';
+  font-size: 6.25rem;
+  color: var(--orange);
+}
+
+.back_btn {
+  font-family: 'Anton';
+  font-size: 4.85;
+  width: 400px;
+  height: 100px;
+  font-size: 3.25rem;
+  color: var(--orange);
+}
+
+/* -----------------------------------------------
+                   ADGANGSGIVENDE SIDE
+----------------------------------------------- */
+
+.baggrund {
+  background-color: var(--orange);
+}
+
+.indextext {
+  font-family: 'Baskerville';
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.indexkumbh {
+  font-family: 'Kumbh Sans';
+  font-size: 2rem;
+}
+
+.sans {
+  text-align: center;
+  padding: 10%;
+}
+
+.indexkumbh button {
+  font-family: 'Anton';
+  font-size: 2rem;
+  padding: 3%;
+}
+
+.adgangsflex {
+  position: absolute;
+  top: 40%;
+  right: 30%;
+  justify-content: center;
+}
+
+.adgangsrow {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.butts {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+/* -----------------------------------------------
+                   FORSIDE
+----------------------------------------------- */
+
+/*-- forside billeder---*/
+.wrapper .left {
+  display: inline;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.maskottenforside {
+  display: none;
+}
+
+.left img {
+  padding-top: 9%;
+}
+
+.wrapper img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.25s ease all;
+}
+
+.scrolltext {
+  font-family: 'Anton';
+  font-size: 3.125rem;
+  color: #3F8E44;
+  padding: 2% 0%;
+}
+
+
+.wrapper .left:hover .image,
+.wrapper .right:hover .image {
+  transform: scale(1.2);
+}
+
+/*---agf nyhed --*/
+
+.flexforside1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #5171F0;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexforside1 img {
+  width: 60%;
+}
+
+.flexforside1 h2 {
+  font-family: 'Anton';
+  font-size: 6.25rem;
+  color: var(--orange);
+}
+
+.flexforside1text1 {
+  font-family: 'Kumbh Sans';
+  font-size: 1.25rem;
+  color: var(--orange);
+  padding: 5%;
+  text-align: center;
+}
+
+/*--- arrangementer---*/
+
+.flexforside2 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.billede2 {
+  display: none;
+}
+
+.flexforside2text2 h2 {
+  font-family: 'Anton';
+  font-size: 3.125rem;
+  color: var(--orange);
+  padding: 8%;
+  text-align: center;
+}
+
+.flexforside2text2 p {
+  font-family: 'Kumbh Sans';
+  font-size: 1.25rem;
+  padding: 2% 3%;
+}
+
+.flexforside2butt {
+  font-family: 'Anton';
+  font-size: 1.25rem;
+  color: var(--orange);
+  padding: 1%;
+  border: solid var(--orange);
+}
+
+.flexforside2buttflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flexforside2 img {
+  padding: 3%;
+}
+
+.flexforside2img2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*-----recycle ---*/
+
+.flexforside3 {
+  display: flex;
+  flex-direction: column;
+  background-color: #3F8E44;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  margin: 5%;
+}
+
+.flexforside3text3 {
+  text-align: center;
+}
+
+.flexforside3text3 h2 {
+  font-family: 'Anton';
+  font-size: 3.125rem;
+  color: var(--orange);
+  padding: 3%;
+}
+
+.flexforside3text3 p {
+  font-family: 'Kumbh Sans';
+  font-size: 1.25rem;
+  padding: 5%;
+}
+
+.flexforside3text3 a {
+  font-family: 'Anton';
+  font-size: 1.25rem;
+  color: var(--orange);
+  padding: 1%;
+  border: solid var(--orange);
+}
+
+.flexforside3 img {
+  width: 40%;
+}
+
+/* -----------------------------------------------
+                   Vores historie og Vision
+----------------------------------------------- */
+
+.maskot {
+  width: 40%;
+}
+
+.flexbillede {
+  display: flex;
+  justify-content: center;
+}
+
+.flextext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overskrifthv {
+  font-family: 'Anton';
+  font-size: 3.125rem;
+  text-align: center;
+}
+
+.textone {
+  font-family: 'Kumbh Sans';
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 5%;
+  letter-spacing: 1%;
+  word-spacing: 1%;
+}
+
+.textto {
+  font-family: 'Kumbh Sans';
+  font-size: 1.25rem;
+  padding: 3%;
+  text-align: justify;
+  letter-spacing: 1%;
+  word-spacing: 1%;
+}
+
+.lilleoverskrift {
+  font-family: 'Anton';
+  font-size: 1.25rem;
+  padding: 2%;
+  letter-spacing: 1%;
+  word-spacing: 1%;
+}
+
+.afsender {
+  font-family: 'Baskerville';
+  font-size: 3.125rem;
+  padding-left: 5%;
+}
+
+.finalebillede {
+  width: 50%;
+  padding-bottom: 3%;
+}
+
+/* -----------------------------------------------
+                   Nyd livet frit 
+----------------------------------------------- */
+.overskriftnyd {
+  font-family: 'Anton';
+  font-size: 3.125rem;
+  text-align: center;
+  padding: 5%;
+}
+
+.slogan {
+  background-color: var(--orange);
+  padding: 4%;
+}
+
+.textone1 {
+  font-family: 'Kumbh Sans';
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 5%;
+  letter-spacing: 1%;
+  word-spacing: 1%;
+}
+
+.textto1 {
+  font-family: 'Kumbh Sans';
+  font-size: 1.25rem;
+  text-align: justify;
+  letter-spacing: 1%;
+  word-spacing: 1%;
+  padding: 0 10%;
+}
+
+.lilleoverskrift1 {
+  font-family: 'Anton';
+  font-size: 1.25rem;
+  padding: 1% 10%;
+  letter-spacing: 1%;
+  word-spacing: 1%;
+}
+
+.flipperskrift {
+  font-family: 'Anton';
+  font-size: 2.125rem;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.flipskrift {
+  font-family: 'Anton';
+  font-size: 2.125rem;
+  text-align: center;
+  padding: 3%;
+}
+
+.overskriftnydlivetfrit {
+  font-family: 'Anton';
+  font-size: 6.25rem;
+  text-align: left;
+  padding-left: 5%;
+}
+
+/*---flipcards--*/
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardoverskrift {
+  font-family: 'Anton';
+  font-size: 2.85rem;
+  padding: 2%;
+}
+
+.cardp {
+  font-family: 'Kumbh Sans';
+  font-size: 1.5rem;
+  padding: 10% 5% 0 5%;
+}
+
+.flipkorimg {
+  width: 300px;
+  height: 300px;
+}
+
+.flexcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5%;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  padding: 10%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: var(--orange);
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+/* -----------------------------------------------
+                   FRI VARIANTER
+----------------------------------------------- */
+.desktopmenu {
+  display: none;
+}
+
+.accordion {
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 3.125rem;
+  transition: 0.4s;
+  font-family: 'Anton';
+  text-align: center;
+}
+
+.flexover img {
+  display: none;
+}
+
+#pils {
+  background-color: #5DAD49;
+}
+
+#classic {
+  background-color: #20703B;
+}
+
+#paeske {
+  background-color: #F6E67D;
+}
+
+#sommer {
+  background-color: #EDA7FF;
+}
+
+#jul {
+  background-color: #222070;
+}
+
+.fripilsoverskrift {
+  font-family: 'Anton';
+  font-size: 6.25rem;
+  color: #CAFD75;
+  text-align: center;
+}
+
+.friclassicoverskrift {
+  font-family: 'Anton';
+  font-size: 6.25rem;
+  color: #00290E;
+  text-align: center;
+}
+
+.fripaeskeoverskrift {
+  font-family: 'Anton';
+  font-size: 6.25rem;
+  color: #F8A145;
+  text-align: center;
+}
+
+.frisommeroverskrift {
+  font-family: 'Anton';
+  font-size: 6.25rem;
+  color: #FA7B06;
+  text-align: center;
+}
+
+.frijuloverskrift {
+  font-family: 'Anton';
+  font-size: 6.25rem;
+  color: #0668FA;
+  text-align: center;
+}
+
+.panel img {
+  width: 50%;
+}
+
+.imgfleximg {
+  display: flex;
+  justify-content: center;
+}
+
+.active,
+.accordion:hover {
+  background-color: var(--orange)
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #5DAD49;
+  overflow: hidden;
+}
+
+.overskriftfri {
+  font-family: 'Anton';
+  font-size: 12.5rem;
+  text-align: left;
+  padding-left: 5%;
+}
+
+.paniltext {
+  font-family: 'Anton';
+  font-size: 3.125rem;
+  color: white;
+  text-align: center;
+  padding: 3%;
+}
+
+/* -----------------------------------------------
+                   SHOP
+----------------------------------------------- */
+.slogan {
+  font-family: 'Anton';
+  font-size: 1.85rem;
+  color: white;
+}
+
+.shoptext {
+  font-family: 'Anton';
+  font-size: 1.85rem;
+  text-align: center;
+}
+
+#shopgalleri {
+  display: flex;
+  flex-direction: column;
+  gap: 3%
+}
+
+.alktext {
+  font-family: 'Kumbh Sans';
+  font-size: 1rem;
+  text-align: center;
+}
+
+#shopimg {
+  width: 400px;
+}
+
+
+/* -----------------------------------------------
+                   OPLEV 
+----------------------------------------------- */
+
+.oplevmenu2 {
+  display: none;
+}
+
+/*---overskrifter--*/
+
+.flexover1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.friover {
+  font-family: 'Anton';
+  padding: 2%;
+}
+
+.overskriftoplev {
+  font-family: 'Anton';
+  font-size: 9.375rem;
+  padding-left: 5%;
+}
+
+.imgarm {
+  display: none;
+}
+
+.blindsmagoverskrift {
+  font-family: 'Anton';
+  font-size: 3.125rem;
+  color: var(--orange);
+  text-align: center;
+  padding: 3%;
+}
+
+.foredragoverskrift {
+  font-family: 'Anton';
+  font-size: 3.125rem;
+  color: #FFA439;
+  text-align: center;
+  padding: 3%;
+}
+
+.arrangementeroverskrift {
+  font-family: 'Anton';
+  font-size: 3.125rem;
+  color: #FA8F12;
+  text-align: center;
+  padding: 3%;
+}
+
+/*---buttons--*/
+
+.oplevflexpanel a {
+  font-family: 'Anton';
+  font-size: 1.25rem;
+  color: var(--orange);
+  padding: 1%;
+  border: solid var(--orange);
+  margin: 5%;
+}
+
+#blind {
+  background-color: white;
+}
+
+#foredrag {
+  background-color: white;
+}
+
+#arrangement {
+  background-color: white;
+}
+
+#blind1 {
+  background-color: var(--orange);
+}
+
+#foredrag1 {
+  background-color: #FFA439;
+}
+
+#arrangement1 {
+  background-color: #FA8F12;
+}
+
+.paneltext {
+  font-family: 'Kumbh Sans';
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 5%;
+}
+
+.panelimg1 {
+  max-width: 70%;
+  padding: 5%;
+}
+
+.oplevflexpanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fritext {
+  font-family: 'Kumbh Sans';
+  font-size: 1.25rem;
+  padding: 2%;
+  text-align: justify;
+}
+
+.frioverblob {
+  font-family: 'Anton';
+  font-size: 1.25rem;
+  text-align: justify;
+}
+
+/*----- STYLING AF GALLERI----*/
+
+.row>.column {
+  padding: 2%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*---galleri styling--*/
+
+.galleriover {
+  font-family: 'Anton';
+  font-size: 3.125rem;
+  text-align: left;
+  padding: 3% 1%;
+}
+
+.galleritext {
+  font-family: 'Kumbh Sans';
+  font-size: 1.25rem;
+  padding: 2% 1%;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -----------------------------------------------
+                 media queries
+----------------------------------------------- */
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+
+@media (min-width: 768px) and (max-width: 1023px) {}
+
+/* ------------------------------------------------------ Styling af desktop starter her -------------------------- */
+/* ------------------------------------------------------ Styling af desktop starter her -------------------------- */
+/* ------------------------------------------------------ Styling af desktop starter her -------------------------- */
+/* ------------------------------------------------------ Styling af desktop starter her -------------------------- */
+
+@media (min-width: 1024px) {
+
+  /*------------------------------ FOOTER - Desktop--------------------------*/
+  .footer_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .paefri {
+    margin: 200px;
+  }
+
+  /*------------------------------ FORSIDE - Desktop--------------------------*/
+  .wrapper {
+    display: none;
+  }
+
+  .maskottenforside {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .maskottenforside img {
+    object-fit: cover;
+  }
+
+  /*--- agf nyhedsbanner --*/
+
+  .flexforside1 {
+    flex-direction: row;
+  }
+
+  .flexforside1 img {
+    width: 30%;
+    padding: 5%;
+  }
+
+  .flexforside1 h2 {
+    padding: 2%;
+  }
+
+  .flexforside1text1 {
+    padding: 2%;
+    text-align: left;
+    width: 300px;
+  }
+
+  /*-- arrangementer--*/
+
+  .flexforside2 {
+    flex-direction: row;
+  }
+
+  .flexforside2text2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+  }
+
+  .flexforside2text2 h2 {
+    padding: 3%;
+    text-align: left;
+  }
+
+  .flexforside2text2 p {
+    width: 800px;
+  }
+
+  .flexforside2img2 {
+    padding-top: 5%;
+  }
+
+  .billede2 {
+    display: inline;
+  }
+
+  /*--recycle --*/
+  .flexforside3 img {
+    width: 30%;
+  }
+
+  /*------------------------------ FRI VARIANTER - Desktop--------------------------*/
+
+  .mobilmenu {
+    display: none;
+  }
+
+  .desktopmenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .overskriftfri{
+    font-size: 21.875rem;
+  }
+
+  .flexover img {
+    display: inline;
+    height: 500px;
+    width: auto;
+  }
+
+  .flexover {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .friover1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .tabcontent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .rektangelfriflex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .rektangel {
+    font-family: 'Anton';
+    color: white;
+    font-size: 3.125rem;
+    text-align: center;
+    padding: 2% 6.2%;
+  }
+
+  .pils {
+    background-color: #5DAD49;
+  }
+
+  .classic {
+    background-color: #20703B;
+  }
+
+  .paeske {
+    background-color: #F6E67D;
+  }
+
+  .sommer {
+    background-color: #EDA7FF;
+  }
+
+  .jul {
+    background-color: #222070;
+  }
+
+  .flexfri {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .flexfri img {
+    width: 30%;
+  }
+
+  #pilsflex {
+    background-color: #5DAD49;
+  }
+
+  #classicflex {
+    background-color: #20703B;
+  }
+
+  #paeskeflex {
+    background-color: #F6E67D;
+  }
+
+  #sommerflex {
+    background-color: #EDA7FF;
+  }
+
+  #julflex {
+    background-color: #222070;
+  }
+
+  .alttextfri {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3%;
+  }
+
+  .alttextfri a {
+    font-family: 'Anton';
+    font-size: 1.875rem;
+    color: var(--orange);
+    padding: 1%;
+    border: solid var(--orange);
+  }
+
+  .hoejre {
+    text-align: right;
+  }
+
+  .venstre {
+    text-align: left;
+  }
+  .buttflex {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /*------------------------------ VORES HISTORI OG VISION - Desktop--------------------------*/
+
+
+  .maskot {
+    width: 30%;
+  }
+
+  .overskrifthv {
+    font-size: 6.25rem;
+  }
+
+  .textone {
+    font-size: 1.875rem;
+    padding: 5% 10%;
+  }
+
+  .textto {
+    font-size: 1.875rem;
+    padding: 3% 8%;
+  }
+
+  .side {
+    text-align: left;
+  }
+
+  .kendos {
+    text-align: center;
+    padding-bottom: 3%;
+  }
+
+  .lilleoverskrift {
+    font-size: 1.875rem;
+    padding: 3% 8%;
+  }
+
+  .afsender {
+    font-size: 3.125rem;
+    padding: 3%;
+  }
+
+  .afsnittekstflex {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+  }
+
+  .finalebillede {
+    width: 609px;
+    height: 703px;
+    padding-bottom: 3%;
+  }
+
+  /*------------------------------ NYD LIVET FRIT- Desktop--------------------------*/
+
+  .overskriftnyd {
+    font-size: 4.25rem;
+  }
+
+  .flipperskrift {
+    font-size: 3.125rem;
+  }
+
+  .flipskrift {
+    font-size: 2.125rem;
+  }
+
+  .overskriftnydlivetfrit {
+    font-size: 15.875rem;
+  }
+
+  .textone1 {
+    font-size: 1.875rem;
+  }
+
+  .textto1 {
+    font-size: 1.875rem;
+  }
+
+  .lilleoverskrift1 {
+    font-size: 1.875rem;
+  }
+
+  .flexcard {
+    display: flex;
+    flex-direction: row;
+    gap: 8%;
+    margin-block: 2em 15em;
+  }
+
+  .flip-card{
+    padding: 0;
+  }
+  /*------------------------------ OPLEV - Desktop--------------------------*/
+
+
+  .oplevmenu1 {
+    display: none;
+  }
+
+  .oplevmenu2 {
+    display: contents;
+  }
+
+  .rektangeloplevflex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .rektangelblind {
+    background-color: var(--orange);
+    font-family: 'Anton';
+    color: white;
+    font-size: 3.125rem;
+    text-align: center;
+    padding: 2% 5.5%;
+  }
+
+  .flexforside2text2 h3 {
+    font-family: 'Anton';
+    font-size: 1.875rem;
+    padding-left: 2%;
+  }
+
+  .oplevtext2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    padding: 5%;
+  }
+
+  .oplevtext2 h2 {
+    font-family: 'Anton';
+    font-size: 3.125rem;
+    color: var(--orange);
+    padding: 2%;
+  }
+
+  .oplevtext2 p {
+    font-family: 'Kumbh Sans';
+    font-size: 1.25rem;
+    padding: 3%;
+  }
+
+  .oplevtext2 a {
+    font-family: 'Anton';
+    font-size: 1.25rem;
+    color: var(--orange);
+    padding: 1%;
+    border: solid var(--orange);
+  }
+
+  .oplevoel {
+    padding-top: 13%;
+  }
+
+  .blahimg {
+    padding-left: 5%;
+  }
+
+
+  .rektangelforedrag {
+    background-color: #FFA439;
+    font-family: 'Anton';
+    color: white;
+    font-size: 3.125rem;
+    text-align: center;
+    padding: 2% 5.2%;
+  }
+
+  .rektangelarrangement {
+    background-color: #FA8F12;
+    font-family: 'Anton';
+    color: white;
+    font-size: 3.125rem;
+    text-align: center;
+    padding: 2% 5%;
+  }
+
+  .overskriftoplev {
+    font-family: 'Anton';
+    font-size: 21.5rem;
+    text-align: left;
+    padding-left: 5%;
+  }
+
+  .imgarm {
+    display: inline;
+    width: 40%;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /*------------------------------ SHOP - Desktop--------------------------*/
+
+  #ovreshopgalleri {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #shopgalleri {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8%;
+  }
+
+  .alktext {
+    font-family: 'Kumbh Sans';
+    font-size: 1.85rem;
+    text-align: center;
+  }
+
+  #shopimg {
+    width: 400px;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+  }
+
+  /*------------------------------ ADGANGSGIVENDE SIDE - Desktop--------------------------*/
+  .indextext {
+    text-align: none;
+  }
+
+  .adgangsrow {
+    flex-direction: row;
+  }
+
+}

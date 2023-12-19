@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <!--meta-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Alkoholfri, øl, sundhed, mikrobryggeri, Aarhus">
+  <meta name="description" content="Alkoholfri øl varianter">
+  <meta name="author" content="Karoline Deleuran">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--stylesheet-->
+  <link rel="stylesheet" href="css/style.css">
+  <title>TrøjborgBryg</title>
+
+  <!--google font-->
+  <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Kumbh Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Baskervville' rel='stylesheet'>
+
+  <!--favicon-->
+  <link rel="icon" href="/img/maskot.png">
+</head>
+
+<body>
+  <header>
+    <!--H E A D E R-->
+    <div id="mySidebar" class="sidebar">
+      <h1 class="logo"><a href="forside.html">TrøjborgBryg</a></h1>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/burgermenuaeben.png"
+          alt="aebenburgermenu"></a>
+      <button class="dropdown-btn">FRI
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="fri.html">FRI varianter</a>
+        <a href="fisk.html">Bryggeprocessen</a>
+        <a href="shop.html">Shop</a>
+      </div>
+      <a href="oplev.html">Oplev</a>
+      <button class="dropdown-btn">Om os
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="voreshistorie.html">Vores historie</a>
+        <a href="voresvision.html">Vores vision</a>
+      </div>
+      <a href="nydlivetfrit.html">Nyd livet frit</a>
+    </div>
+
+    <!--JAVA TIL HEADER-->
+    <div id="main">
+      <button class="openbtn" onclick="openNav()"><img src="img/burgermenulukket.png" alt="lukket oeldaese"></button>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+    <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+    </script>
+
+  </header>
+
+  <!-- M A I N  S T A R T E R   H E R-->
+  <main>
+
+    <!--menu til mobilen-->
+    <div class="mobilmenu">
+      <div class="flexover">
+        <h2 class="overskriftfri">FRI</h2>
+        <img src="img/tegnetøldåse.png" alt="tegnet daese">
+      </div>
+
+      <button class="accordion" id="pils">pils</button>
+      <div class="panel" id="pilsp">
+        <div class="imgfleximg">
+          <img class="imgflex" src="img/daeser/pngpils.png" alt="pilsner alkoholfri fri">
+        </div>
+        <h3 class="fripilsoverskrift">FRI PILS</h3>
+        <p class="paniltext">FRI pils er til dig der kan lide en god pilsner - for det er nemlig det, den smager af.</p>
+      </div>
+
+      <button class="accordion" id="classic">classic</button>
+      <div class="panel" id="classic">
+        <div class="imgfleximg">
+          <img class="imgflex" src="img/daeser/classicpng1.png" alt="classic alkoholfri fri">
+        </div>
+        <h3 class="friclassicoverskrift">FRI CLASSIC</h3>
+        <p class="paniltext">FRI classic er en klassisker.
+          Her får du en rund og blød smag af øl. Perfekt til øl-elskere.
+          Vores bedstsolgte øl er helt klart
+          et forsøg værd!.</p>
+      </div>
+
+      <button class="accordion" id="paeske">påske</button>
+      <div class="panel" id="paeske">
+        <div class="imgfleximg">
+          <img class="imgflex" src="img/daeser/påskepng.png" alt="påske alkoholfri fri">
+        </div>
+        <h3 class="fripaeskeoverskrift">FRI PÅSKE</h3>
+        <p class="paniltext">FRI påske med et strejf af mango og passion er din nye tilføjelse til påskebordet.</p>
+      </div>
+
+      <button class="accordion" id="sommer">sommer</button>
+      <div class="panel" id="sommer">
+        <div class="imgfleximg">
+          <img class="imgflex" src="img/daeser/sommerpng.png" alt="sommer alkoholfri fri">
+        </div>
+        <h3 class="frisommeroverskrift">FRI SOMMER</h3>
+        <p class="paniltext">FRI sommer er til dig dig måske ikke er så fan af ølsmagen (bare rolig, vi siger det ikke
+          til nogen). Med et frisk pust af citrus glemmer du næsten af det engang har været koldt og mørkt.</p>
+      </div>
+
+      <button class="accordion" id="jul">jul</button>
+      <div class="panel" id="jul">
+        <div class="imgfleximg">
+          <img class="imgflex" src="img/daeser/jul png1.png" alt="pilsner alkoholfri fri">
+        </div>
+        <h3 class="frijuloverskrift">FRI JUL</h3>
+        <p class="paniltext">FRI jul. Nisser mig her og nisser mig der. Vi tilbyder julestemning på dåse, se det er
+          noget helt specielt. </p>
+      </div>
+
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+      </script>
+    </div>
+
+    <!-- menu til desktop-->
+    <div class="desktopmenu">
+
+      <div class="friover1">
+        <div class="flexover">
+          <h2 class="overskriftfri">FRI</h2>
+          <img src="img/tegnetøldåse.png" alt="tegnet daese">
+        </div>
+
+
+        <div class="rektangelfriflex">
+          <p class="rektangel pils">pils</p>
+          <p class="rektangel classic"> classic</p>
+          <p class="rektangel paeske">påske</p>
+          <p class="rektangel sommer"> sommer</p>
+          <p class="rektangel jul">jul</p>
+        </div>
+      </div>
+
+      <div class="tabcontet">
+        <div id="pilsflex" class="flexfri">
+          <img src="img/daeser/pngpils.png" alt="pils oeldaese">
+          <div class="alttextfri">
+            <h2 class="fripilsoverskrift hoejre"> FRI PILS</h2>
+            <p class="paniltext hoejre">FRI pils er til dig der kan lide en god pilsner - for det er nemlig det, den
+              smager af.
+            </p>
+            <div class="buttflex">
+              <a class="hoejre" href="shop.html">BESØG SHOP</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="classicflex" class="flexfri">
+          <div class="alttextfri">
+            <h3 class="friclassicoverskrift venstre">FRI CLASSIC</h3>
+            <p class="paniltext venstre">FRI classic er en klassisker.
+              Her får du en rund og blød smag af øl. Perfekt til øl-elskere.
+              Vores bedstsolgte øl er helt klart
+              et forsøg værd!.</p>
+            <div>
+              <a class="venstre" href="shop.html">BESØG SHOP</a>
+            </div>
+          </div>
+          <img src="img/daeser/classicpng1.png" alt="classic oeldaese">
+        </div>
+
+        <div class="tabcontet">
+          <div id="paeskeflex" class="flexfri">
+            <img src="img/daeser/påskepng.png" alt="paeske oeldaese">
+            <div class="alttextfri">
+              <h3 class="fripaeskeoverskrift hoejre">FRI PÅSKE</h3>
+              <p class="paniltext hoejre">FRI påske med et strejf af mango og passion er din nye tilføjelse til
+                påskebordet.
+              </p>
+              <div class="buttflex">
+                <a class="hoejre" href="shop.html">BESØG SHOP</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="sommerflex" class="flexfri">
+            <div class="alttextfri">
+              <h3 class="frisommeroverskrift venstre">FRI SOMMER</h3>
+              <p class="paniltext venstre">FRI sommer er til dig dig måske ikke er så fan af ølsmagen (bare rolig, vi
+                siger det
+                ikke
+                til nogen). Med et frisk pust af citrus glemmer du næsten af det engang har været koldt og mørkt.</p>
+              <div>
+                <a class="venstre" href="shop.html">BESØG SHOP</a>
+              </div>
+            </div>
+            <img src="img/daeser/sommerpng.png" alt="sommer oeldaese">
+          </div>
+
+          <div class="tabcontet">
+            <div id="julflex" class="flexfri">
+              <img src="img/daeser/jul png1.png" alt="jul oeldaese">
+              <div class="alttextfri">
+                <h3 class="frijuloverskrift hoejre">FRI JUL</h3>
+                <p class="paniltext hoejre">FRI jul. Nisser mig her og nisser mig der. Vi tilbyder julestemning på dåse,
+                  se det
+                  er
+                  noget helt specielt. </p>
+                <div class="buttflex">
+                  <a class="hoejre" href="shop.html">BESØG SHOP</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+  </main>
+
+
+  <!-- F O O T E R  S T A R T E R   H E R-->
+  <footer>
+    <div class="footer_flex paefri">
+      <!--Sociale medier-->
+      <section>
+        <h2>FØLG MED</h2>
+        <a target="_blank" href="https://www.instagram.com/k.ruseduller/?hl=da">
+          <img src="img/instagram.png" alt="Instagram icon" class="insta_icon">
+        </a>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100001959425376">
+          <img src="img/facebook.png" alt="Instagram icon" class="fb_icon">
+        </a>
+      </section>
+      <!--Lokation-->
+      <section>
+        <h2>LOKATION</h2>
+        <p>Graven 26, 8000 Aarhus C</p>
+        <iframe class="kort_footer"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=tordenskjoldsgade%2040,%208200%20Aarhus+(Tr%C3%B8jborgBryg)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="google map af Troejborgbryg lokation"></iframe>
+      </section>
+      <!--Kontakt-->
+      <section>
+        <h2>KONTAKT</h2>
+        <p>trøjborgbryg@gmail.com</p>
+        <p>Tlf: 30 48 97 70</p>
+      </section>
+    </div>
+    <p class="allrightstext">Copyright © 2023 Karoline Deleuran. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

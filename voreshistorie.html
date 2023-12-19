@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <!--meta-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Alkoholfri, øl, sundhed, mikrobryggeri, Aarhus">
+  <meta name="description" content="Alkoholfri øl varianter">
+  <meta name="author" content="Karoline Deleuran">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--stylesheet-->
+  <link rel="stylesheet" href="css/style.css">
+  <title>TrøjborgBryg</title>
+
+  <!--google font-->
+  <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Kumbh Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Baskervville' rel='stylesheet'>
+
+  <!--favicon-->
+  <link rel="icon" href="/img/maskot.png">
+</head>
+
+<body>
+  <header>
+    <!--H E A D E R-->
+    <div id="mySidebar" class="sidebar">
+        <h1 class="logo"><a href="forside.html">TrøjborgBryg</a></h1>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/burgermenuaeben.png"
+                alt="aebenburgermenu"></a>
+        <button class="dropdown-btn">FRI
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="fri.html">FRI varianter</a>
+            <a href="fisk.html">Bryggeprocessen</a>
+            <a href="shop.html">Shop</a>
+        </div>
+        <a href="oplev.html">Oplev</a>
+        <button class="dropdown-btn">Om os
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="voreshistorie.html">Vores historie</a>
+            <a href="voresvision.html">Vores vision</a>
+        </div>
+        <a href="nydlivetfrit.html">Nyd livet frit</a>
+    </div>
+
+    <!--JAVA TIL HEADER-->
+    <div id="main">
+        <button class="openbtn" onclick="openNav()"><img src="img/burgermenulukket.png"
+                alt="lukket oeldaese"></button>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+</header>
+
+  <!-- M A I N S T A R T E R   H E R-->
+  <main>
+    <div class="flexbillede">
+      <img class="maskot" src="img/maskot.png" alt="Fritz">
+    </div>
+
+    <div class="flextext">
+      <h1 class="overskrifthv">VORES HISTORIE</h1>
+      <p class="textone">Vi er TrøjborgBryg, et mikrobryggeri beliggende i hjertet af Aarhus (eller Aarhus N). Måske har
+        du allerede stiftet bekendtskab med vores ikoniske dåser, eller måske kender du Fritz, vores passionerede
+        brygger, som du kan finde sidde lige herover.
+      </p>
+      <p class="textto kendos">Hvis du endnu ikke kender os, så lad os introducere os selv:</p>
+      <div class="afsnittekstflex">
+        <div>
+          <h3 class="lilleoverskrift">TrøjborgBryg - Lokal stolthed i form af alkoholfri øl</h3>
+          <p class="textto side">Vi er dedikerede til at brygge alkoholfri øl, og vores flagskib bærer navnet FRI. Det er
+            vores stolthed og glæde, og vi håber, at du vil dele den med os. Måske var du allerede bekendt med det, men
+            hvis ikke, er du nu i gang med at lære os bedre at kende!</p>
+          <h3 class="lilleoverskrift">Historien bag TrøjborgBryg</h3>
+          <p class="textto side">Vores bryggeri blev grundlagt tilbage i 2004, og fra dag ét har vores mission været at
+            brygge den bedste alkoholfri øl, der kan nydes af alle. Vi tror på, at smagen ikke skal kompromitteres, selv
+            når alkoholen er udeladt. Derfor går vi hver dag ind i brygprocessen med dedikation og entusiasme for at
+            levere en øloplevelse, der vil overraske dine smagsløg og efterlade dig med et smil.</p>
+        </div>
+        <div class="flexbillede">
+          <img class="finalebillede" src="img/armbaend.png" alt="haend i haend">
+        </div>
+      </div>
+      <p class="textone">Så tag et kig rundt, lær os bedre at kende og del en FRI med os. Vi er glade for at have dig
+        her, og vi ser frem til at fortsætte med at brygge glæde i hver eneste dåse!</p>
+      <p class="textto">Prost!</p>
+      <h2 class="afsender">TrøjborgBryg</h2>
+    </div>
+
+
+  </main>
+
+
+  <!-- F O O T E R  S T A R T E R   H E R-->
+  <footer>
+    <div class="footer_flex">
+      <!--Sociale medier-->
+      <section>
+        <h2>FØLG MED</h2>
+        <a target="_blank" href="https://www.instagram.com/k.ruseduller/?hl=da">
+          <img src="img/instagram.png" alt="Instagram icon" class="insta_icon">
+        </a>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100001959425376">
+          <img src="img/facebook.png" alt="Instagram icon" class="fb_icon">
+        </a>
+      </section>
+      <!--Lokation-->
+      <section>
+        <h2>LOKATION</h2>
+        <p>Graven 26, 8000 Aarhus C</p>
+        <iframe class="kort_footer"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=tordenskjoldsgade%2040,%208200%20Aarhus+(Tr%C3%B8jborgBryg)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="google map af Tankens lokation"></iframe>
+      </section>
+      <!--Kontakt-->
+      <section>
+        <h2>KONTAKT</h2>
+        <p>trøjborgbryg@gmail.com</p>
+        <p>Tlf: 30 48 97 70</p>
+      </section>
+    </div>
+    <p class="allrightstext">Copyright © 2023 Karoline Deleuran. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <!--meta-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Alkoholfri, øl, sundhed, mikrobryggeri, Aarhus">
+  <meta name="description" content="Alkoholfri øl varianter">
+  <meta name="author" content="Karoline Deleuran">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--stylesheet-->
+  <link rel="stylesheet" href="css/style.css">
+  <title>TrøjborgBryg</title>
+
+  <!--google font-->
+  <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Kumbh Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Baskervville' rel='stylesheet'>
+
+  <!--favicon-->
+  <link rel="icon" href="/img/maskot.png">
+</head>
+
+<body>
+  <header>
+    <!--H E A D E R-->
+    <div id="mySidebar" class="sidebar">
+        <h1 class="logo"><a href="forside.html">TrøjborgBryg</a></h1>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/burgermenuaeben.png"
+                alt="aebenburgermenu"></a>
+        <button class="dropdown-btn">FRI
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="fri.html">FRI varianter</a>
+            <a href="fisk.html">Bryggeprocessen</a>
+            <a href="shop.html">Shop</a>
+        </div>
+        <a href="oplev.html">Oplev</a>
+        <button class="dropdown-btn">Om os
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="voreshistorie.html">Vores historie</a>
+            <a href="voresvision.html">Vores vision</a>
+        </div>
+        <a href="nydlivetfrit.html">Nyd livet frit</a>
+    </div>
+
+    <!--JAVA TIL HEADER-->
+    <div id="main">
+        <button class="openbtn" onclick="openNav()"><img src="img/burgermenulukket.png"
+                alt="lukket oeldaese"></button>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</header>
+
+  <!-- M A I N C O N T E N T   S T A R T E R   H E R-->
+  <main>
+
+    <div class="flexover1">
+      <h2 class="overskriftnydlivetfrit">NYD LIVET FRIT</h2>
+    </div>
+
+    <p class="slogan"></p>
+
+
+    <div class="flextext">
+      <h1 class="overskriftnyd">Hvorfor Alkoholfri Øl er Godt for Krop og Sind:</h1>
+      <p class="textone1">Velkommen til vores skæve lille hjørne af ølverdenen, hvor vi bryder med konventionerne og
+        byder velkommen til en fest af sundhed og smag. Alkoholfri øl er ikke kun en tørstslukker, det er en
+        sundhedsrevolution i en flaske!</p>
+      <h3 class="flipskrift">Hold musen over korten og få en god fact om hvad vores alkoholfri øl kan tilbyde dig. </h3>
+    </div>
+
+    <!--flipper kort 1-->
+    <div class="flexcard card1">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="flipkortimg" src="img/flipkort.png" alt="flipkort">
+          </div>
+          <div class="flip-card-back">
+            <h1 class="cardoverskrift">Vidste du?</h1>
+            <p class="cardp"> Med færre kalorier end dens
+              alkoholholdige søskende, kan du nyde en forfriskende øl uden at tænke på taljemålet.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="flipkortimg" src="img/flipkort.png" alt="flipkort">
+          </div>
+          <div class="flip-card-back">
+            <h1 class="cardoverskrift">Vidste du?</h1>
+            <p class="cardp"> Alkoholfri øl er din nye hydreringsven. Den hjælper med at genopbygge
+              væskebalancen og holder dig i topform.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="flipkortimg" src="img/flipkort.png" alt="flipkort">
+          </div>
+          <div class="flip-card-back">
+            <h1 class="cardoverskrift">Vidste du?</h1>
+            <p class="cardp">Alkoholfri øl kan forbedre dit humør uden at efterlade dig med en tømmermændsnedtur.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="flextext">
+      <h1 class="overskriftnyd">Leg med Smagen: Fun facts om vores alkoholfri øl!</h1>
+      <p class="textone">Glem alt om begrænsninger - vores alkoholfri øl, også kendt som "FRI," er den perfekte
+        ledsager til alle dine eventyr. Fra festlige sammenkomster til afslappede stunder derhjemme, vores øl er
+        skabt til at sprede smil og sundhed.</p>
+      <h3 class="flipskrift">Hold musen over korten og få en god fact om hvad vores alkoholfri øl kan tilbyde dig.
+      </h3>
+    </div>
+
+    <!--flipper kort -->
+    <div class="flexcard card2">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="flipkortimg" src="img/flipkort.png" alt="flipkort">
+          </div>
+          <div class="flip-card-back">
+            <h1 class="cardoverskrift">Vidste du?</h1>
+            <p class="cardp">Mindre Stress, Mere FRIhed: En god grund til at vælge FRI – mindre stress, mere frihed
+              til at nyde livet!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="flipkortimg" src="img/flipkort.png" alt="flipkort">
+          </div>
+          <div class="flip-card-back">
+            <h1 class="cardoverskrift">Vidste du?</h1>
+            <p class="cardp">Alkoholfri Øl er Rig på Vitamin B: Styrker dit immunforsvar og booster din energi.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="flipkortimg" src="img/flipkort.png" alt="flipkort">
+          </div>
+          <div class="flip-card-back">
+            <h1 class="cardoverskrift">Vidste du?</h1>
+            <p class="cardp">Ingen Tømmermændsjagt: Med alkoholfri øl er du altid klar til næste dag uden at
+              skulle bekymre dig om tømmermænd!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+  <!-- FOOTER STARTER HER-->
+  <footer>
+    <div class="footer_flex">
+      <!--Sociale medier-->
+      <section>
+        <h2>FØLG MED</h2>
+        <a target="_blank" href="https://www.instagram.com/k.ruseduller/?hl=da">
+          <img src="img/instagram.png" alt="Instagram icon" class="insta_icon">
+        </a>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100001959425376">
+          <img src="img/facebook.png" alt="Instagram icon" class="fb_icon">
+        </a>
+      </section>
+      <!--Lokation-->
+      <section>
+        <h2>LOKATION</h2>
+        <p>Graven 26, 8000 Aarhus C</p>
+        <iframe class="kort_footer"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=tordenskjoldsgade%2040,%208200%20Aarhus+(Tr%C3%B8jborgBryg)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="google map af Tankens lokation"></iframe>
+      </section>
+      <!--Kontakt-->
+      <section>
+        <h2>KONTAKT</h2>
+        <p>trøjborgbryg@gmail.com</p>
+        <p>Tlf: 30 48 97 70</p>
+      </section>
+    </div>
+    <p class="allrightstext">Copyright © 2023 Karoline Deleuran. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
